@@ -1,0 +1,16 @@
+name: Weather Server
+description: 高德天气查询服务
+version: 0.1.0
+
+server:
+  module: weather_mcp.server
+  transport: stdio
+
+tools:
+  - name: get_weather
+    description: 获取指定城市的天气信息
+    parameters:
+      - name: city
+        type: string
+        description: 城市编码
+        required: true 
