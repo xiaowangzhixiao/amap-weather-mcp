@@ -1,6 +1,7 @@
 """
 MCP服务器模块
 """
+import sys
 from mcp.server.fastmcp import FastMCP
 from weather_mcp.weather import weather_service
 
@@ -25,9 +26,8 @@ async def get_weather(city: str) -> dict:
 
 def main():
     """主函数"""
-    import sys
     if len(sys.argv) != 2 or sys.argv[1] not in ["stdio", "http"]:
-        print("Usage: python -m weather_mcp.server [stdio|http]")
+        print("Usage: amap-weather-mcp [stdio|http]")
         sys.exit(1)
     
     mode = sys.argv[1]

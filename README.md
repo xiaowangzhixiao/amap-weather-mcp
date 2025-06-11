@@ -11,10 +11,11 @@
 
 ## 安装
 
-### 方法1：使用pip安装
+### 方法1：使用发布包安装（目前没发布到pipy里）
+从github release中下载包
 
 ```bash
-pip install amap-weather-mcp
+pip install amap_weather_mcp-0.1.0-py3-none-any.whl 
 ```
 
 ### 方法2：从源码安装
