@@ -14,15 +14,15 @@
 ### 方法1：使用pip安装
 
 ```bash
-pip install weather-mcp
+pip install amap-weather-mcp
 ```
 
 ### 方法2：从源码安装
 
 1. 克隆仓库：
 ```bash
-git clone https://github.com/yourusername/weather-mcp.git
-cd weather-mcp
+git clone https://github.com/xiaowangzhixiao/amap-weather-mcp.git
+cd amap-weather-mcp
 ```
 
 2. 使用uv创建虚拟环境：
@@ -54,14 +54,14 @@ AMAP_API_KEY=your_api_key_here
 
 ### 命令行使用
 
-安装后，可以直接使用 `weather-mcp` 命令：
+安装后，可以直接使用 `amap-weather-mcp` 命令：
 
 ```bash
 # stdio模式
-weather-mcp stdio
+amap-weather-mcp stdio
 
 # HTTP模式
-weather-mcp http
+amap-weather-mcp http
 ```
 
 ### 作为Python模块使用
@@ -81,7 +81,7 @@ mcp.run(transport="streamable-http", host="0.0.0.0", port=8000)
 1. stdio模式：
 ```json
 {
-    "command": "weather-mcp",
+    "command": "amap-weather-mcp",
     "args": ["stdio"]
 }
 ```
